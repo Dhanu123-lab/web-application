@@ -12,10 +12,11 @@
     <header>
         <div class="logo">🍔 Marco</div>
         <nav>
-            <a href="#menu">Menu</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-            <a href="#order" class="btn">Order Now</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#lunch">Lunch</a>
+            <a href="#dinner">Dinner</a>
+            <a href="#snacks">Snacks</a>
+            <a href="#basket" class="btn">🛒 Basket</a>
         </nav>
     </header>
 
@@ -24,47 +25,143 @@
         <div class="hero-text">
             <h1>Delicious Food, Delivered Fast</h1>
             <p>Order from your favorite restaurants and get it delivered to your doorstep in minutes.</p>
-            <a href="#menu" class="btn">Explore Menu</a>
+            <a href="#breakfast" class="btn">Explore Menu</a>
         </div>
         <div class="hero-img">
             <img src="https://images.unsplash.com/photo-1604908176971-9d8d0b1b4f0b?q=80&w=800" alt="Food">
         </div>
     </section>
 
-    <!-- Menu Section -->
-    <section id="menu">
-        <h2>Our Special Dishes</h2>
+    <!-- Breakfast -->
+    <section id="breakfast">
+        <h2>🍳 Breakfast</h2>
         <div class="menu-grid">
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=800" alt="Burger">
-                <h3>Cheeseburger</h3>
-                <p>Juicy beef patty, cheese, lettuce, and sauce.</p>
-                <span>₹299</span>
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800" alt="Pancakes">
+                <h3>Pancakes</h3>
+                <p>Fluffy pancakes with maple syrup.</p>
+                <span>₹199</span>
+                <button onclick="addToBasket('Pancakes', 199)">Add to Basket</button>
             </div>
             <div class="card">
-                <img src="https://images.unsplash.com/photo-1562967914-60897f0b0d0b?q=80&w=800" alt="Paneer Tikka">
-                <h3>Paneer Tikka</h3>
-                <p>Grilled paneer with aromatic spices.</p>
-                <span>₹349</span>
-            </div>
-            <div class="card">
-                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800" alt="Biryani">
-                <h3>Veg Biryani</h3>
-                <p>Fragrant rice cooked with spices and veggies.</p>
-                <span>₹279</span>
+                <img src="C:\Users\bodda\Downloads\download.jpg" alt="Idli Sambar">
+                <h3>Idli Sambar</h3>
+                <p>Soft idlis served with hot sambar.</p>
+                <span>₹149</span>
+                <button onclick="addToBasket('Idli Sambar', 149)">Add to Basket</button>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Marco</h2>
-        <p>We bring you the best food from the best places in your city. With Marco, you enjoy fast, fresh, and delicious meals delivered right to you.</p>
+    <!-- Lunch -->
+    <section id="lunch">
+        <h2>🍛 Lunch</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?q=80&w=800" alt="Cheeseburger">
+                <h3>Cheeseburger</h3>
+                <p>Juicy beef patty, cheese, lettuce, and sauce.</p>
+                <span>₹299</span>
+                <button onclick="addToBasket('Cheeseburger', 299)">Add to Basket</button>
+            </div>
+            <div class="card">
+                <img src="C:\Users\bodda\Downloads\download (1).jpg" alt="Paneer Tikka">
+                <h3>Paneer Tikka</h3>
+                <p>Grilled paneer with aromatic spices.</p>
+                <span>₹349</span>
+                <button onclick="addToBasket('Paneer Tikka', 349)">Add to Basket</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dinner -->
+    <section id="dinner">
+        <h2>🍽 Dinner</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800" alt="Veg Biryani">
+                <h3>Veg Biryani</h3>
+                <p>Fragrant rice cooked with spices and veggies.</p>
+                <span>₹279</span>
+                <button onclick="addToBasket('Veg Biryani', 279)">Add to Basket</button>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1543353071-873f17a7a088?q=80&w=800" alt="Butter Chicken">
+                <h3>Butter Chicken</h3>
+                <p>Creamy tomato gravy with tender chicken.</p>
+                <span>₹399</span>
+                <button onclick="addToBasket('Butter Chicken', 399)">Add to Basket</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Snacks -->
+    <section id="snacks">
+        <h2>🥪 Snacks</h2>
+        <div class="menu-grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?q=80&w=800" alt="French Fries">
+                <h3>French Fries</h3>
+                <p>Crispy golden potato fries.</p>
+                <span>₹99</span>
+                <button onclick="addToBasket('French Fries', 99)">Add to Basket</button>
+            </div>
+            <div class="card">
+                <img src="C:\Users\bodda\Downloads\download (2).jpg" alt="Samosa">
+                <h3>Samosa</h3>
+                <p>Spicy potato-filled crispy snack.</p>
+                <span>₹49</span>
+                <button onclick="addToBasket('Samosa', 49)">Add to Basket</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Basket Section -->
+    <section id="basket">
+        <h2>🛒 Your Basket</h2>
+        <ul id="basket-list"></ul>
+        <p><strong>Total:</strong> ₹<span id="basket-total">0</span></p>
+
+        <h3>💳 Payment Method</h3>
+        <label><input type="radio" name="payment" value="Cash" checked> Cash on Delivery</label><br>
+        <label><input type="radio" name="payment" value="UPI"> UPI</label><br>
+        <label><input type="radio" name="payment" value="Card"> Credit/Debit Card</label><br>
+
+        <button class="btn" onclick="checkout()">Proceed to Pay</button>
     </section>
 
     <!-- Footer -->
-    <footer id="contact">
+    <footer>
         <p>© 2025 Marco Food Delivery | Designed with ❤️</p>
     </footer>
+
+    <!-- Script for Basket -->
+    <script>
+        let basket = [];
+        function addToBasket(item, price) {
+            basket.push({item, price});
+            updateBasket();
+        }
+        function updateBasket() {
+            const list = document.getElementById("basket-list");
+            const total = document.getElementById("basket-total");
+            list.innerHTML = "";
+            let sum = 0;
+            basket.forEach((b, i) => {
+                sum += b.price;
+                list.innerHTML += `<li>${b.item} - ₹${b.price} <button onclick="removeItem(${i})">❌</button></li>`;
+            });
+            total.textContent = sum;
+        }
+        function removeItem(index) {
+            basket.splice(index, 1);
+            updateBasket();
+        }
+        function checkout() {
+            alert("Thank you for your order! Your food is on the way 🚚");
+            basket = [];
+            updateBasket();
+        }
+    </script>
 </body>
 </html>
